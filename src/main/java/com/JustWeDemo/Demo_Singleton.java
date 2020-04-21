@@ -1,4 +1,4 @@
-package com.JustWe.demo;
+package com.JustWeDemo;
 
 public class Demo_Singleton {
 //	private Singleton(){

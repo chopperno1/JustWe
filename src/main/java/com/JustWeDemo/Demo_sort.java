@@ -1,4 +1,4 @@
-package com.JustWe.demo;
+package com.JustWeDemo;
 
 import java.util.ArrayList;
 import java.util.Arrays;
