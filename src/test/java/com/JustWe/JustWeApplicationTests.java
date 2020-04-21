@@ -13,8 +13,11 @@ class JustWeApplicationTests {
 	@Test
 	void contextLoads() {
 
-		logger.info("测试测试");
-
+		logger.trace("trace测试测试");
+		logger.debug("debug测试测试");
+		logger.info("info测试测试");
+		logger.warn("warn测试测试");
+		logger.error("error测试测试");
 
 	}
 
