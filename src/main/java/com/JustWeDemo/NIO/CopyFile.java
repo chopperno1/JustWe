@@ -1,4 +1,4 @@
-package com.JustWe.demo.NIO;
+package com.JustWeDemo.NIO;
 
 import java.io.*;
 import java.nio.ByteBuffer;

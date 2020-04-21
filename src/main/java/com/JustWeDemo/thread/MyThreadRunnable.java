@@ -1,4 +1,4 @@
-package com.JustWe.demo.thread;
+package com.JustWeDemo.thread;
 
 public class MyThreadRunnable implements Runnable{
 
