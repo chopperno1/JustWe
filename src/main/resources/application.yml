@@ -1,8 +1,19 @@
 spring:
-  thymeleaf:
-    prefix:
-      classpath: /static   # 访问static下的html文件需要配置模板，映射
-    cache: false # 开发时关闭缓存,不然没法看到实时页面
+  # 多环境配置
+  profiles:
+    active: dev
+#    active: produce
+  messages:
+    basename: i18n.login
+
+server:
+  servlet:
+    context-path: /
+
+thymeleaf:
+  prefix:
+    classpath: /static   # 访问static下的html文件需要配置模板，映射
+  cache: false # 开发时关闭缓存,不然没法看到实时页面
 
 
 
