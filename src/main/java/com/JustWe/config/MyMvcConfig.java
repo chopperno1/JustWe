@@ -44,7 +44,8 @@ public class MyMvcConfig extends WebMvcConfigurerAdapter {
                                 "/webjars/**", //静态资源
                                 "/asserts/**", //静态资源
                                 "/login.html",
-                                "/user/login"
+                                "/user/login",
+                                "/hello"
                         );
             }
         };
