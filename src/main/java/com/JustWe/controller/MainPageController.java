@@ -13,7 +13,7 @@ import java.util.Map;
  * 页面跳转
  */
 @Controller
-public class PageController {
+public class MainPageController {
 
     Logger logger = LoggerFactory.getLogger(getClass());
 

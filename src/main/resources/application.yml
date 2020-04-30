@@ -3,24 +3,22 @@ spring:
   profiles:
     active: dev
 #    active: produce
+
   #语言国际化路径
   messages:
     basename: i18n.login
+
+  mvc:
+    # 默认配置为yyyy/MM/dd
+    date-format: yyyy-MM-dd
+    # 表单请求方式（支持put，delete等方式）
+    hiddenmethod:
+      filter:
+        enabled: true
 
   thymeleaf:
     prefix:
       classpath: /static   # 访问static下的html文件需要配置模板，映射
     cache: false # 开发时关闭缓存,不然没法看到实时页面
-
-
-server:
-  servlet:
-    context-path: /
-
-
-
-
-
-
 
 
