@@ -22,3 +22,30 @@ spring:
     cache: false # 开发时关闭缓存,不然没法看到实时页面
 
 
+  datasource:
+    # 数据源基本配置
+    username: xxxxx
+    password: xxxxx
+#    driver-class-name: com.mysql.jdbc.Driver
+#    schema:
+#      - classpath:department.sql
+    url: jdbc:mysql://xxxxx:xxxx/xxxx
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 5
+    # 数据源其他配置
+    initialization-mode: always
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM xxxx
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+#   配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+    filters: stat,wall,log4j2
+    maxPoolPreparedStatementPerConnectionSize: 20
+    useGlobalDataSourceStat: true
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500

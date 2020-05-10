@@ -4,10 +4,13 @@ import com.JustWe.exception.UserNotExistException;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -17,6 +20,16 @@ import java.util.Map;
 public class MainPageController {
 
     Logger logger = LoggerFactory.getLogger(getClass());
+
+    @Autowired
+    JdbcTemplate jdbcTemplate;
+
+    @ResponseBody
+    @GetMapping("/query")
+    public Map<String, Object> map() {
+        List<Map<String, Object>> list = jdbcTemplate.queryForList("SELECT * FROM department");
+        return list.get(0);
+    }
 
 
     @RequestMapping("/hello")
