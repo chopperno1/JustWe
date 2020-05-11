@@ -1,8 +1,6 @@
 package com.JustWe.entities;
 
-import java.util.Date;
-
-public class Employee_MyBatis {
+public class Employee4MyBatis {
 
 	private Integer id;
 
@@ -16,7 +14,7 @@ public class Employee_MyBatis {
 
     @Override
     public String toString() {
-        return "Employee_MyBatis{" +
+        return "Employee4MyBatis{" +
                 "id=" + id +
                 ", lastName='" + lastName + '\'' +
                 ", gender=" + gender +
@@ -25,7 +23,10 @@ public class Employee_MyBatis {
                 '}';
     }
 
-    public Employee_MyBatis(Integer id, String lastName, Integer gender, String email, Integer dId) {
+    public Employee4MyBatis() {
+    }
+
+    public Employee4MyBatis(Integer id, String lastName, Integer gender, String email, Integer dId) {
         this.id = id;
         this.lastName = lastName;
         this.gender = gender;
