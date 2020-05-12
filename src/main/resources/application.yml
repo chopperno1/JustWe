@@ -53,6 +53,13 @@ spring:
 #      - classpath:sql/department.sql
 #      - classpath:sql/employee.sql
 
+  jpa:
+    hibernate:
+#     更新或者创建数据表（每次启动）
+      ddl-auto: update
+#   控制台显示SQL
+    show-sql: true
+
 mybatis:
   # 指定全局配置文件位置
   config-location: classpath:mybatis/mybatis-config.xml

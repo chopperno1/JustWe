@@ -30,10 +30,10 @@ public class DruidConfig {
     public ServletRegistrationBean statViewServlet() {
         ServletRegistrationBean<StatViewServlet> bean = new ServletRegistrationBean<>(new StatViewServlet(), "/druid/*");
         Map<String, String> initParams = new HashMap<>();
-        initParams.put("loginUsername", "xxxxx");
-        initParams.put("loginPassword", "xxxxx");
+        initParams.put("loginUsername", "admin");
+        initParams.put("loginPassword", "123456");
         initParams.put("allow", "localhost");// 默认就是允许所有访问
-        initParams.put("deny", "xxxxx");
+        initParams.put("deny", "192.168.31.72");
 
         bean.setInitParameters(initParams);
         return bean;
