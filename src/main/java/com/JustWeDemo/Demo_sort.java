@@ -7,22 +7,6 @@ import java.util.List;
 public class Demo_sort {
 
 	public static void main(String[] args) {
-//		MyThread myThread1 = new MyThread();
-//		MyThread myThread2 = new MyThread();
-//		myThread1.start();
-//		myThread2.start();
-		
-//		MyThreadRunnable MyThreadRunnable1 = new MyThreadRunnable();
-//		MyThreadRunnable MyThreadRunnable2 = new MyThreadRunnable();
-//		Thread thread1 = new Thread(MyThreadRunnable1);
-//		Thread thread2 = new Thread(MyThreadRunnable2);
-//		thread1.start();
-//		thread2.start();
-		
-		List<String> list = new ArrayList<String>();
-		System.out.println("--->"+list.get(0)+"<---");
-		
-		
 		/*
 		 * 排序
 		 */

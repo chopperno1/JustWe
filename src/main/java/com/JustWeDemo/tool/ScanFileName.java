@@ -1,4 +1,4 @@
-package com.JustWe.tool;
+package com.JustWeDemo.tool;
 
 import org.apache.commons.lang3.StringUtils;
 
