@@ -16,9 +16,7 @@ public class SemaphoreTest {
     public static void main(String[] args) {
         try {
             for (int i = 0; i < 100; i++) {
-                new Thread(() -> {
-                    test();
-                }).start();
+                new Thread(() -> test()).start();
             }
         } catch (Exception e) {
             e.printStackTrace();

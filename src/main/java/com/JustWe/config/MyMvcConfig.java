@@ -43,6 +43,7 @@ public class MyMvcConfig extends WebMvcConfigurerAdapter {
                         .excludePathPatterns("/",
                                 "/webjars/**", //静态资源
                                 "/asserts/**", //静态资源
+                                "/login",
                                 "/login.html",
                                 "/user/login",
                                 "/hello"
